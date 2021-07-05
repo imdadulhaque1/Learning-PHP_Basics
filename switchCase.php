@@ -26,7 +26,6 @@ switch ($dayName){
           default:
                     echo "Please, Enter the valid date!";
                     break;
-                    
 }
 
 
