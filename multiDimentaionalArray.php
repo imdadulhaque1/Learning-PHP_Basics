@@ -1,7 +1,7 @@
 <?php
 
 $arr = [
-          [1, "Israt Jahan Maisha", "Female", "Child"],
+          [1, "Israt Jahan Maisha", "Female", "tittle child"],
           [2, "Hena Khatun", "Female", "Nurse"],
           [3, "Enamul Haque", "Male", "Farmer"],
           [4, "Imdadul Haque", "Male", "Engineer"],
@@ -14,13 +14,21 @@ $arr = [
 //           }
 //           echo "<br>";
 // }
-
+echo "<table border='2px' cellspacing='0px' cellpadding='5px'>";
+echo "<tr>
+          <th>Serial</th>
+          <th>Family Name</th>
+          <th>Gender</th>
+          <th>Occupation</th>
+</tr>";
 foreach ($arr as $v1){
+          echo "<tr>";
           foreach($v1 as $v2){
-                    echo $v2." ";
+                    echo "<td>".$v2."</td>";
           }
-          echo "<br>";
+          echo "</tr>";
 }
+echo "</table>";
 
 // echo $arr[0][0]."   ";
 // echo $arr[0][1]."   ";
